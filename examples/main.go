@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	u, _ := ts.Parse("tomorrow 4pm")
-	t := time.Unix(u,0)
+	u, _ := ts.Parse("first friday in 2021")
+	t := time.Unix(u, 0)
 	fmt.Println(t)
+	fmt.Println(ts.Date("2021-01-12"))
 }
